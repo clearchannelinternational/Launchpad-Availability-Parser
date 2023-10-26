@@ -9,6 +9,8 @@ ready.
 the original request body (step 1) in JSON format, and the retrieved avails 
 dataset (in zstandard parquet format)
 
+The script in this repository helps parse and split the 'Multipart/Mixed' response into two separate `.json` and `.zstd.parquet` files.
+
 **Note**: It will take some time (< 5 minutes) to prepare the data for step 2. Querying the endpoint URL earlier than this will 
 return a 202. 
 
